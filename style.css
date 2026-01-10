@@ -1,0 +1,127 @@
+/* 全体の基本設定 */
+body {
+  font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.8;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* メインカード */
+.profile {
+  background: white;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* 見出し */
+h1 {
+  color: #2c7be5;
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  color: #2c7be5;
+  margin-top: 32px;
+}
+
+/* プロフィール画像 */
+.profile-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* セクション */
+section {
+  margin-bottom: 24px;
+}
+
+/* ボタン */
+button {
+  width: 80%;
+  max-width: 300px;
+  padding: 14px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(45deg, #2c7be5, #1a5fc4);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .profile {
+    margin: 20px;
+    padding: 24px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+}
+.btn {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 14px 36px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+
+  background: linear-gradient(135deg, #2c7be5, #1a5fc4);
+  border-radius: 999px;
+
+  box-shadow: 0 8px 20px rgba(44, 123, 229, 0.35);
+  transition: 0.3s ease;
+}
+
+/* ホバー時（マウス乗せた時） */
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(44, 123, 229, 0.45);
+}
+@media (max-width: 600px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .profile {
+    margin: 20px;
+    padding: 24px;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 14px 0;
+  }
+
+}
